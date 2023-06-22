@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class StudentResult{
+    public static   void main(String[] args)
+    {
+
+     System.out.println("Enter Student  marks:");
+
+     Scanner s=new Scanner(System.in);
+
+     System.out.println("Enter HTML  marks:");
+     int html=s.nextInt();
+     System.out.println("Enter C  marks:");
+     int c=s.nextInt();
+     System.out.println("Enter JAVA  marks:");
+     int java=s.nextInt();
+     int TotalPercentage=(html+c+java)/3;
+     if((TotalPercentage<40)||(html<33)||(c<33)||(java<33))
+     {
+        System.out.println("You get \t"+TotalPercentage+"% and You are fail");
+     }
+     else
+     {
+        System.out.println("You get \t"+TotalPercentage+"% and You are Pass");
+
+     }
+    }
+}
