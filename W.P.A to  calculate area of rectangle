@@ -1,0 +1,14 @@
+ 
+import java.util.Scanner;
+class AraeofTriangle {
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+       System.out.println("Enter Length of rectangle:");
+       int L=s.nextInt();
+       System.out.println("Enter Breath of rectangle:");
+       int B=s.nextInt();
+       double area=L*B;
+       System.out.println("Area of rectanle:"+area);
+      
+    }
+}
