@@ -1,0 +1,24 @@
+//determine enter char is uppercase or lowercase
+import java.util.Scanner;
+class Check_char_uppercase_or_not
+{
+      public static void main(String[] args) {
+        
+        Scanner s=new Scanner (System.in);
+        System.out.println("Enter Character=");
+       char c=s.nextLine().charAt(0);
+        if(Character.isUpperCase(c))
+        {
+            System.out.println("Uppercase");
+        }
+        else if(Character.isLowerCase(c))
+        {
+            System.out.println("LowerCase"); 
+        }
+        else
+        {
+            System.out.println("Not a letter"); 
+        }
+        
+    }
+}
