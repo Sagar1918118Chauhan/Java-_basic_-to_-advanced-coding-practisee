@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class IncomeTax
+{
+    public static void main(String[] args)
+    {
+        Scanner s=new Scanner(System.in);
+           double tax=0;
+         System.out.println("Enter your Income:");
+         int income=s.nextInt();
+         if(income>=250000 && income<=500000)
+         {
+          tax=tax+0.05*(income-250000);
+         }
+         if(income>=500000 && income<=1000000)
+         {
+            tax=tax+0.20*(income-500000);
+         }
+         if(income>=1000000 )
+         {
+            tax=tax+0.30*(income-1000000);
+         }
+         
+         System.out.println("Your net income tax to be paid is="+tax+"Rs");
+        
+    }
+}
