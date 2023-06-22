@@ -1,0 +1,14 @@
+  //convert TEMPERATURE celcius to farenhrit
+import java.util.Scanner;
+class Temperature{
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+       
+       System.out.println("Enter Celcius value:");
+       int celcius=s.nextInt();
+      double farenheit=(celcius*9/5)+32;   
+      System.out.println("Celcius \t"+celcius+"\t is equal to \t"+farenheit+"Farenheit");
+      
+      
+    }
+}
