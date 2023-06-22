@@ -1,0 +1,28 @@
+ //Check number is Palindrome or not
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+       System.out.println("Enter num to check:");
+       int num=s.nextInt();
+       int sum=0,r,c;
+       c=num;
+       while(num>0)
+       {
+           r=num%10;
+           sum=r+sum*10;
+           num=num/10;
+           
+           
+       }
+       if(c==sum)
+       {
+           
+        System.out.println("  palindrom number");
+       }
+       else
+       {
+           System.out.println("  not a Palindrom number");
+       }
+    }
+}
