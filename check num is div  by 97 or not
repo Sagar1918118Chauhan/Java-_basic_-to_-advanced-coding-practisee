@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class checknumis_div_by97or_not
+{
+      public static void main(String[] args) {
+        
+        Scanner s=new Scanner (System.in);
+        System.out.println("Enter number ");
+        int num=s.nextInt();
+       int divisibility=num % 97;
+       if(divisibility==0)
+       {
+        System.out.println("yes  divisible");
+       }
+       else
+       {
+          System.out.println("Not  divisible");
+       }
+        
+        
+    }
+}
