@@ -1,0 +1,22 @@
+ 
+class forceOfAttraction{
+    int mass;
+    double gravity;
+ 
+     
+    
+    public void force(int mass , double gravity)
+       {
+         double forceResult=( mass*gravity);
+         System.out.print("Force of attraction ="+forceResult);
+
+       }
+    public static void main(String[] args)
+
+    {
+      
+        forceOfAttraction obj=new forceOfAttraction();
+        obj.force(10,9.8);
+
+    }
+ }
