@@ -1,0 +1,18 @@
+ 
+class convertTemperature{
+     public void tem(int celcius)
+       {
+         float farenheit=(celcius*9/5)+32;
+         System.out.print("Celcius "+celcius+"is ="+farenheit+"farenheit");
+
+       }
+    public static void main(String[] args)
+
+    {
+      
+        convertTemperature obj=new convertTemperature();
+        obj.tem(10);
+
+
+    }
+ }
