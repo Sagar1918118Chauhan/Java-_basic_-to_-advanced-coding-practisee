@@ -1,0 +1,20 @@
+public class A
+{
+    public static void main(String[] args)
+    {
+        for(int i=1;i<=5;i++)//ROW
+        {
+            for(int j=1;j<i;j++)//Space
+            {   
+                    System.out.print(" ");  
+               
+            }
+            for(int k=i;k<=5;k++)//columb
+            {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
