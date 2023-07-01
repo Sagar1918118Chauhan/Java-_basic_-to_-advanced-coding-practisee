@@ -1,0 +1,36 @@
+public class A
+{
+    public static void main(String[] args)
+    {
+    // {  int s=5;
+        for(int i=1;i<=5;i++)//ROW
+        { 
+            for(int j=1;j<=(5-i+1);j++)//COLUMB
+            {    
+                System.out.print(j);
+            }
+            //  s--;
+           
+            System.out.println();
+        }
+    }
+}
+
+
+************************************************************************************************************
+public class A
+{
+    public static void main(String[] args)
+    {  int s=5;
+        for(int i=1;i<=5;i++)//ROW
+        { 
+            for(int j=1;j<=s;j++)//COLUMB
+            {    
+                System.out.print(j);
+            }
+             s--;
+           
+            System.out.println();
+        }
+    }
+}
