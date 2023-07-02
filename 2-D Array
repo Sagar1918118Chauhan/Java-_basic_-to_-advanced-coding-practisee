@@ -1,0 +1,76 @@
+ 
+public class Array
+{
+    public static void main(String[] args)
+    {     
+        
+        
+       
+         int a[][]={{1,2},{3,4} };
+         
+          int   b[][]={{10,20},{30,40}};
+          int[][] z=new int[2][2];
+
+      
+     
+     System.out.println("Display Array 1 is:");
+     for(int i=0;i<a.length;i++)
+     {
+          for(int j=0;j<a.length;j++)
+          {
+                 
+                 System.out.print(a[i][j]+" ");
+
+          }
+          System.out.println(" ");
+     }
+     System.out.println("Display Array 2 is:");
+     for(int i=0;i<b.length;i++)
+     {
+          for(int j=0;j<b.length;j++)
+          {
+                 
+                 System.out.print(b[i][j]+" ");
+
+          }
+          System.out.println(" ");
+     }
+     System.out.println("Sum of both Array:");
+     for(int i=0;i<z.length;i++)
+     {
+          for(int j=0;j<z.length;j++)
+          {
+                 z[i][j]=a[i][j]+b[i][j];
+                 
+                  System.out.print(z[i][j]+" ");
+          }
+          System.out.println(" ");
+     }
+System.out.println("Transpose of  Array 1 is:");
+     for(int i=0;i<a.length;i++)
+     {
+          for(int j=0;j<a.length;j++)
+          {
+                 
+                 System.out.print(a[j][i]+" ");
+
+          }
+          System.out.println(" ");
+     }
+     System.out.println("Mirror of Array  1 is:");
+     for(int i=0;i<a.length;i++)
+     {
+          for(int j=1;j>=0;j--)
+          {
+                 
+                 System.out.print(a[j][i]+" ");
+
+          }
+          System.out.println(" ");
+     }
+
+
+
+    }
+    }
+
