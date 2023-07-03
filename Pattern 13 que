@@ -1,0 +1,24 @@
+ 
+public class NumberPayramid
+{
+    public static void main(String[] args)
+    {    int num=1;
+         for(int i=1;i<=5;i++)//row
+         {
+            for(int j=i;j<=4;j++)//space
+            {
+                System.out.print(" ");
+            }
+            for(int k=1;k<=i;k++)//columb
+            {
+             System.out.print(num);
+             System.out.print(" ");
+             
+            }
+            num++;
+            System.out.println(" ");
+         }
+
+    }
+}
+
