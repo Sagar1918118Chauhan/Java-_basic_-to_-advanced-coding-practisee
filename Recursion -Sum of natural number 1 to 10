@@ -1,0 +1,21 @@
+ 
+class Recursion {
+    public static void main(String[] args) {
+       
+       sumOfNum(1,10,0);
+    }
+     public static  void  sumOfNum(int i,int n,int sum)
+ {    
+     if(i==n)
+     {
+         sum+=i;
+         System.out.println(sum);
+         return;
+     }
+        
+         sum+=i;
+         sumOfNum(i+1,n,sum);
+     
+     
+ }
+}
