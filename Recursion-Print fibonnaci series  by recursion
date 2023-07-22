@@ -1,0 +1,27 @@
+ 
+class fibonnaci {
+    public static void main(String[] args) {
+       int t1=0;
+       int t2=1;
+             System.out.print(t1);
+             System.out.print(t2);
+             int num =7;
+       fibonnaci(t1,t2,num-2);
+    }
+     public static  void fibonnaci(int t1,int t2, int num)
+ {    
+     
+     if(num==0)
+     {
+         return ;    
+     }
+       else
+       {
+         int  nextterm=t1+t2;
+           System.out.print(nextterm+" ");
+           fibonnaci(t2,nextterm,num-1);
+          
+          
+       }
+    }
+}
