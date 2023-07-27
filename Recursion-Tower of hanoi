@@ -1,0 +1,15 @@
+public class recursion {
+    public static void towerOfHanoi(int n, String S, String H, String D) {
+        if (n == 1) {
+            System.out.println("Transfer disk " + n + " from " + S + " to " + D);
+        }
+        towerOfHanoi(n - 1, S, D, H);
+        System.out.println("Transfer disk " + n + " from " + S + " to " + D);
+        towerOfHanoi(n - 1, H, S, D);
+    }
+
+    public static void main(String[] a) {
+        int n = 1;
+        towerOfHanoi(n, "S", "H", "D");
+    }
+}
