@@ -1,0 +1,26 @@
+ public class recursion{
+     public static void revString(String name,int index )
+     {
+         if(index==0)
+         {    
+             System.out.println(name.charAt(index));
+             return;
+             
+         }
+         
+           
+            System.out.println(name.charAt(index));
+        
+            revString(name,index-1);
+         
+         
+     }
+     
+public static void main(String[] a)
+     {    
+        String name="abcd";
+          revString("abcd",name.length()-1);
+          
+          
+     }
+ }
