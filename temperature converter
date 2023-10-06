@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+public class temchange {
+    public static void main(String[] args) {
+        System.out.println("Three different scales are commonly used to measure temperature:");
+        System.out.println("1. Fahrenheit (expressed as °F)");
+        System.out.println("2. Celsius (°C)");
+        System.out.println("3. Kelvin (K)");
+
+        float C, F, K;
+        char option;
+do{
+        Scanner sc = new Scanner(System.in);
+        System.out.println("-----------Choose any one option to convert temperature------ ");
+       
+        System.out.println("\n1. To convert Celsius to Fahrenheit");
+        System.out.println("2. To convert Celsius to Kelvin");
+        System.out.println("3. Fahrenheit to Celsius");
+        System.out.println("4. To convert Kelvin to Celsius");
+        System.out.println("5. To convert Fahrenheit to Kelvin");
+        System.out.println("6. Kelvin to Fahrenheit");
+   int ch = sc.nextInt();
+        switch (ch) {
+            case 1:
+                System.out.println("Please enter Celsius degree");
+                C = sc.nextFloat();
+                float formulaCtoF = (C * 9/5) + 32;
+                System.out.println(C + "°C is equal to " + formulaCtoF + "°F");
+                break;
+            case 2:
+                System.out.println("Please enter Celsius degree");
+                C = sc.nextFloat();
+                float formulaCtoK = C + 273.15f;
+                System.out.println(C + "°C is equal to " + formulaCtoK + "K");
+                break;
+            case 3:
+                System.out.println("Please enter Fahrenheit degree");
+                F = sc.nextFloat();
+                float formulaFtoC = (F - 32) * 5/9;
+                System.out.println(F + "°F is equal to " + formulaFtoC + "°C");
+                break;
+            case 4:
+                System.out.println("Please enter Kelvin degree");
+                K = sc.nextFloat();
+                float formulaKtoC = K - 273.15f;
+                System.out.println(K + "K is equal to " + formulaKtoC + "°C");
+                break;
+            case 5:
+                System.out.println("Please enter Fahrenheit degree");
+                F = sc.nextFloat();
+                float formulaFtoK = (F - 32) * 5/9 + 273.15f;
+                System.out.println(F + "°F is equal to " + formulaFtoK + "K");
+                break;
+            case 6:
+                System.out.println("Please enter Kelvin degree");
+                K = sc.nextFloat();
+                float formulaKtoF = (K - 273.15f) * 9/5 + 32;
+                System.out.println(K + "K is equal to " + formulaKtoF + "°F");
+                break;
+            default:
+                System.out.println("Invalid choice");
+
+        }
+        System.out.println("Do you want chose more option(y/n)");
+         option=sc.next().charAt(0);
+
+    }while(option=='y' || option=='Y');
+    }
+}
