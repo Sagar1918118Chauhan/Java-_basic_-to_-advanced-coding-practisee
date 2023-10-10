@@ -1,0 +1,49 @@
+ import java.util.*;
+
+class A {
+    public void rec()
+{
+    
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter length of rectangle");
+    int len=sc.nextInt();
+      System.out.println("Enter breath of rectangle");
+    int bre=sc.nextInt();
+    float area=len*bre;
+    System.out.println("Area of rectangle is= "+area); 
+    
+    
+    
+}
+public void sqr()
+{
+   
+    Scanner sc=new  Scanner(System.in);
+    System.out.println("Enter length of Square=");
+    int l=sc.nextInt();
+    float areaofsq=4*l;
+    System.out.println("Area of square is="+areaofsq);
+    
+    
+}
+public void cir()
+{  double pie=3.14;
+    Scanner sc=new  Scanner(System.in);
+    System.out.println("Enter radius of circle=");
+    float radius=sc.nextFloat();
+    double areaofcir=pie*radius*radius;
+    System.out.println("Area of Circle is="+areaofcir);
+    
+    
+  
+    
+}
+    public static void main(String[] args) {
+        A obj=new A();
+        obj.rec();
+        obj.sqr();
+        obj.cir();
+        
+       
+    }
+}
