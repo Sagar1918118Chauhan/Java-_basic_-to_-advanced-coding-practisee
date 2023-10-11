@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+class Abc {
+    public void Intrest() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter principle value=");
+        float principle = sc.nextFloat();
+        System.out.println("Enter Rate value=");
+        float Rate = sc.nextFloat();
+        System.out.println("Enter time in years=");
+        float n = sc.nextFloat();
+        double simpleIntrest = (principle * Rate * n) / 100;
+
+        System.out.println("Simple Interest =" + simpleIntrest);
+
+        // C.I = A - P
+        // A = P(1 + R/100)*n;
+
+        float amount = (float) (principle * (1 + Rate / 100) * n);
+
+        double compoundInterest = amount - principle;
+
+        System.out.println("Compound Interest =" + compoundInterest);
+    }
+
+    public static void main(String[] args) {
+        Abc obj = new Abc();
+        obj.Intrest();
+    }
+}
