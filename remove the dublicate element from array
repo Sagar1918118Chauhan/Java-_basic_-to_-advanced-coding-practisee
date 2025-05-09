@@ -1,1 +1,52 @@
+  import java.util.LinkedHashSet;
+import java.util.Set;
 
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Remove the duplicate elements in array:");
+        int arr[] = {2, 3, 3, 10, 1, 1, 23, 22};
+
+        Set<Integer> uniqueElements = new LinkedHashSet<>();
+
+        for (int num : arr) {
+            uniqueElements.add(num);  // Duplicates automatically ignored
+        }
+
+        for (int num : uniqueElements) {
+            System.out.print(num + " ");
+        }
+    }
+}
+
+
+// 
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Remove the duplicate elements in array:");
+        int arr[] = {2, 3, 3, 10, 1, 1, 23, 22};
+
+        // Sort the array first
+        Arrays.sort(arr);
+        int len = arr.length;
+        int[] arr2 = new int[len];
+        int j = 0;
+
+        for (int i = 0; i < len - 1; i++) {
+            if (arr[i] != arr[i + 1]) {
+                arr2[j] = arr[i]; // Store unique
+                j++;
+            }
+        }
+        // Add last element
+        arr2[j++] = arr[len - 1];
+
+        // Print result
+        for (int k = 0; k < j; k++) {
+            System.out.print(arr2[k] + " ");
+        }
+    }
+}
+
+//
